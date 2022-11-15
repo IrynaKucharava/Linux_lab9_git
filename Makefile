@@ -1,4 +1,6 @@
+#Install
 INST_DIR = /home/user/dir1/dir2
+
 all: hello
 hello: list.o matrix.o main.o
 	gcc list.o matrix.o main.o -lm -o app	
