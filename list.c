@@ -14,7 +14,7 @@ void AddNode( int NewValue ){
  Root = Item;
 }
 void CreateList(){
- printf(" creation list.\n");
+ printf("Creation list.\n");
  Root = NULL;
  AddNode( 5 );
  AddNode( 4 );
@@ -24,7 +24,7 @@ void CreateList(){
 }
 void ShowList(){
  struct ListItem* Item;
- printf(" printing of list.\n");
+ printf("Printing of list.\n");
  Item = Root;
  while (Item != NULL) {
  printf("(%d) ,",Item->Value);
@@ -34,7 +34,7 @@ void ShowList(){
 }
 void DestroyList(){
  struct ListItem *Item, *Item2;
- printf(" list delete.\n");
+ printf("List delete.\n");
  Item = Root;
  while (Item != NULL) {
  Item2 = Item->Next;
@@ -44,7 +44,7 @@ void DestroyList(){
  Root = NULL;
 }
 void ListFunction(){
- printf("demanstration working with list.\n");
+ printf("Demanstration working with list.\n");
  CreateList();
  ShowList();
  DestroyList();
